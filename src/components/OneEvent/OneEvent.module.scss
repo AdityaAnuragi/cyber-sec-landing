@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+}
+
+// .redBorder {
+//   border: 2px solid red;
+// }
+
+
+
+// .eventDescription {
+//   width: 50%;
+// }
+
+.eventLinkElement {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 8rem;
+}
+
+.image {
+  // margin-right: 0.5rem;
+  display: block;
+
+  // @media only screen and (max-width: 768px) {
+  margin-left: auto;
+  margin-right: auto;
+  // }
+
+  max-width: 18.75rem;
+  max-height: 6.25rem;
+}
+
+.dataDiv {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 6rem;
+  max-width: 8rem;
+  color: rgb(5, 13, 79);
+}
+
+.straightLine {
+  width: 95%;
+  height: 0.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightblue;
+}
+
