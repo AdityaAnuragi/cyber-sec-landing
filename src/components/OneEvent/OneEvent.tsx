@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { BackgroundForImage } from "../BackgroundForImage/BackgroundForImage";
+
 import OneEventStyles from "./OneEvent.module.scss"
 
 export function OneEvent() {
@@ -7,7 +9,9 @@ export function OneEvent() {
       <div className={`${OneEventStyles.container}`} >
         <div className={`${OneEventStyles.redBorder}`} >
           <div className={`${OneEventStyles.dataDiv}`} >October 31, 2024</div>
-          <img src="https://picsum.photos/300/100" alt="event photo" className={`${OneEventStyles.image}`} />
+          <BackgroundForImage>
+            <img src="https://picsum.photos/300/100" alt="event photo" className={`${OneEventStyles.image}`} />
+          </BackgroundForImage>
         </div>
         <div className={`${OneEventStyles.redBorder}`} >
           <Link to={"/"} className={`${OneEventStyles.eventLinkElement}`} > Malware analysis </Link>
