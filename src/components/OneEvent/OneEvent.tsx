@@ -4,12 +4,21 @@ import { BackgroundForImage } from "../BackgroundForImage/BackgroundForImage";
 import OneEventStyles from "./OneEvent.module.scss"
 
 export function OneEvent() {
+
+  const styleForDiv = {
+    display: "block",
+    width: "18.75rem",
+    height: "6.25rem",
+    marginLeft: "auto",
+    marginRight: "auto"
+  }
+
   return(
     <>
       <div className={`${OneEventStyles.container}`} >
         <div className={`${OneEventStyles.redBorder}`} >
           <div className={`${OneEventStyles.dataDiv}`} >October 31, 2024</div>
-          <BackgroundForImage>
+          <BackgroundForImage styleForDiv={styleForDiv} >
             <img src="https://picsum.photos/300/100" alt="event photo" className={`${OneEventStyles.image}`} />
           </BackgroundForImage>
         </div>

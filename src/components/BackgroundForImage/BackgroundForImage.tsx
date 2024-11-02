@@ -3,17 +3,11 @@ import BackgroundForImageStyle from "./BackgroundForImage.module.scss"
 import { ReactNode } from "react"
 
 type BackgroundForImageProps = {
+  styleForDiv: {[key:string]: string}
   children: ReactNode
 }
 
-export function BackgroundForImage({ children }: BackgroundForImageProps) {
-
-  const styleForDiv = {
-    width: "18.75rem",
-    height: "6.25rem",
-    marginLeft: "auto",
-    marginRight: "auto"
-  }
+export function BackgroundForImage({ styleForDiv, children }: BackgroundForImageProps) {
 
   return (
     <div className={`${BackgroundForImageStyle.background}`} style={styleForDiv} >
