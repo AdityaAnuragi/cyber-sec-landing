@@ -1,17 +1,17 @@
 import BackgroundForImageStyle from "./BackgroundForImage.module.scss"
 
-import { ReactNode } from "react"
+import { CSSProperties, ReactNode } from "react"
 
-type BackgroundForImageProps = {
-  styleForDiv: {[key:string]: string}
-  children: ReactNode
-}
-
-export function BackgroundForImage({ styleForDiv, children }: BackgroundForImageProps) {
-
+export function BackgroundForImage({ style, children }: BackgroundForImageProps) {
+  
   return (
-    <div className={`${BackgroundForImageStyle.background}`} style={styleForDiv} >
+    <div className={`${BackgroundForImageStyle.background}`} style={style} >
       {children}
     </div>
   )
+}
+
+type BackgroundForImageProps = {
+  style: CSSProperties
+  children: ReactNode
 }

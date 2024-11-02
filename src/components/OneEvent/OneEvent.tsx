@@ -18,7 +18,7 @@ export function OneEvent() {
       <div className={`${OneEventStyles.container}`} >
         <div className={`${OneEventStyles.redBorder}`} >
           <div className={`${OneEventStyles.dataDiv}`} >October 31, 2024</div>
-          <BackgroundForImage styleForDiv={styleForDiv} >
+          <BackgroundForImage style={styleForDiv} >
             <img src="https://picsum.photos/300/100" alt="event photo" className={`${OneEventStyles.image}`} />
           </BackgroundForImage>
         </div>
