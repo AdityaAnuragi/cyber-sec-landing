@@ -6,6 +6,7 @@ import CssBaseline from '@mui/material/CssBaseline'
 // import App from './App.tsx'
 import { HeaderAndNavBarLayout } from './Layouts/HeaderAndNavBarLayout/HeaderAndNavbarLayout.tsx';
 import { AllEvents } from './Layouts/AllEvents/AllEvents.tsx';
+import { AllMembers } from './Layouts/AllMembers/AllMembers.tsx';
 
 const router = createBrowserRouter([
   {
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/members",
-        element: <h1>This is the members page</h1>,
+        element: <AllMembers />,
         // errorElement: <ErrorPage />
       },
       {
