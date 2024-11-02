@@ -1,9 +1,10 @@
+import { CSSProperties } from "react"
 import { BackgroundForImage } from "../BackgroundForImage/BackgroundForImage"
 import PersonDetailsStyles from "./PersonDetails.module.scss"
 
 export function PersonDetails() {
 
-  const styleForDiv = {
+  const styleForDiv:CSSProperties = {
     width: "100%",
     aspectRatio: "1 / 1"
   }

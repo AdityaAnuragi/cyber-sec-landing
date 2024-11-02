@@ -2,15 +2,16 @@ import { Link } from "react-router-dom";
 import { BackgroundForImage } from "../BackgroundForImage/BackgroundForImage";
 
 import OneEventStyles from "./OneEvent.module.scss"
+import { CSSProperties } from "react";
 
 export function OneEvent() {
 
-  const styleForDiv = {
+  const styleForDiv: CSSProperties = {
     display: "block",
     width: "18.75rem",
     height: "6.25rem",
     marginLeft: "auto",
-    marginRight: "auto"
+    marginRight: "auto",
   }
 
   return(
