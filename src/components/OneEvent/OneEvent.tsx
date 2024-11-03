@@ -7,7 +7,7 @@ import { CSSProperties } from "react";
 export function OneEvent() {
 
   const styleForDiv: CSSProperties = {
-    display: "block",
+    // display: "block",
     width: "18.75rem",
     height: "6.25rem",
     marginLeft: "auto",
