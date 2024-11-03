@@ -2,6 +2,8 @@ import { CSSProperties } from "react"
 import { BackgroundForImage } from "../BackgroundForImage/BackgroundForImage"
 import PersonDetailsStyles from "./PersonDetails.module.scss"
 
+import samplePhoto from "./istockphoto-1335941248-612x612.jpg"
+
 export function PersonDetails() {
 
   const styleForDiv:CSSProperties = {
@@ -15,7 +17,8 @@ export function PersonDetails() {
         {/* <img src="https://picsum.photos/200/200" alt="Club member" className={`${PersonDetailsStyles.img}`} /> */}
 
         <BackgroundForImage style={styleForDiv} >
-          <div className={`${PersonDetailsStyles.imagePlaceholder}`} ></div>
+          {/* <div className={`${PersonDetailsStyles.image}`} ></div> */}
+          <img src={samplePhoto} className={`${PersonDetailsStyles.image}`}  alt="Club member" />
         </BackgroundForImage>
 
         <h3>John Doe</h3>
